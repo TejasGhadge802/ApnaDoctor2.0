@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Apna Doctor</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <style>
+      marquee span {
+        font-size: 4rem;
+        animation: ambulance linear infinite 2s;
+      }
+      @keyframes ambulance {
+        from {
+            text-shadow: 0px -6px 20px rgb(255, 0, 0);
+        }
+        to {
+            text-shadow: 0px 0px 0px rgb(255, 0, 0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="logo2.jpeg" alt="Apna Doctor Logo" id="logo" />
+        <h1>Apna Doctor</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index2.html"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href="about2.html"><i class="fa-solid fa-info"></i></a>
+          </li>
+          <li>
+            <a href="contact2.html"
+              ><i class="fa-solid fa-map-location-dot"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <i class="fa-solid fa-hospital"></i>
+      <div>
+      <h1>AI-Powered Healthcare Solutions</h1>
+      <p>Disease Detection & Precaution</p>
+      <p>Transforming medical diagnostics with advanced AI technology.</p>
+      <i class="fa-solid fa-truck-medical"></i>
+      <marquee><span>🚑</span> 📞108</marquee>
+    </section>
+
+    <section id="info">
+      <section id="details">
+        <h3 style="text-align: center">About the Apna Doctor community</h3>
+        <p>
+          Our AI doctor helps to assisting healthcare professionals utilizing
+          advanced algorithms to analyze medical data, assisting healthcare
+          professionals with diagnoses, treatment recommendations, and
+          preventative measures, ultimately aiming to improve patient care and
+          access to quality healthcare, <b>Especially in Underserved Areas</b> .
+        </p>
+      </section>
+
+      <section id="mission">
+        <h3 style="text-align: center">Our Mission</h3>
+        <i class="fa-solid fa-bullseye"></i>
+        <p>
+          Our mission is to utilize AI-based health assessment technologies and
+          assist people with Physical/Mental disorders in diagnosing and
+          treating those issues.
+        </p>
+      </section>
+    </section>
+
+    <section id="abilityContainer">
+      <h2 style="text-align: center">Apna Doctor in 3 words</h2>
+      <div id="abilitys">
+        <div class="abi">
+          <h2>Commitment</h2>
+          <i class="fa-regular fa-handshake"></i>
+          <p>
+            MEDIBOT professional and experienced team is fully committed to its
+            clients and makes everything possible to improve their mental health
+            and well-being.
+          </p>
+        </div>
+        <div class="abi">
+          <h2>Innovation</h2>
+          <i class="fa-regular fa-lightbulb" id="innovation"></i>
+          <p>
+            Our innovative combination of features and diagnostic materials
+            allows our clients to receive the most accurate results and simple
+            methods to overcome the issue.
+          </p>
+        </div>
+        <div class="abi">
+          <h2>Privacy + Data Safety</h2>
+          <i class="fa-solid fa-shield-halved"></i>
+          <p>
+            Our client’s privacy is our priority. MEDIBOT will provide its users
+            with a secure and confidential experience while trusting us during
+            their hard times.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Apna Doctor. All Rights Reserved.</p>
+
+      <div id="links">
+        <p>
+          <a id="git" href="https://github.com/TejasGhadge802"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </p>
+        <p>
+          <a id="youtube" href="https://www.youtube.com"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </p>
+        <p>
+          <a id="insta" href="https://www.instagram.com/tejas_ghadge_80"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Updated Chatbot Container -->
+    <div class="chat-container">
+      <div class="chat-header">
+        <div class="bot-info">
+          <img src="logo2.jpeg" alt="Bot Avatar" class="bot-avatar">
+          <span>Aapna Bot</span>
+        </div>
+        <button class="close-btn">✖</button>
+      </div>
+      <div id="chat-box" class="chat-box">
+        <div class="chat-message bot">
+          <p>Hi! What can I help you with?</p>
+        </div>
+      </div>
+      <div class="chat-input">
+        <input type="file" id="user-input2" accept="image/*">
+        <input type="text" id="user-input" placeholder="Message..." autocomplete="off">
+        <button id="send-btn">➤</button>
+      </div>
+    </div>
+
+    <!-- Bot Avatar -->
+    <img src="logo2.jpeg" alt="Bot Avatar" id="bot-avatar">
+
+    <script>
+      // Chatbot toggle functionality
+      const botAvatar = document.getElementById('bot-avatar');
+      const chatContainer = document.querySelector('.chat-container');
+      const closeBtn = document.querySelector('.close-btn');
+
+      botAvatar.addEventListener('click', () => {
+        chatContainer.style.display = 'flex';
+        botAvatar.style.display = 'none';
+      });
+
+      closeBtn.addEventListener('click', () => {
+        chatContainer.style.display = 'none';
+        botAvatar.style.display = 'block';
+      });
+    </script>
+
+    <script src="ch2.js"></script>
+  </body>
+</html>

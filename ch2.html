@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbot - Apna Doctor</title>
+    <link rel="stylesheet" href="ch2.css">
+</head>
+<body>
+    <!-- Chatbot container (initially hidden) -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="bot-info">
+                <!-- <img src="logo.jpeg" alt="Bot Avatar" id="ch-logo"> -->
+                <span>Aapna Bot</span>
+            </div>
+            <button class="close-btn">✖</button>
+        </div>
+        <div id="chat-box" class="chat-box">
+            <div class="chat-message bot">
+                <p>Hi! What can I help you with?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="file" id="user-input2" accept="image/*">
+            <input type="text" id="user-input" placeholder="Message..." autocomplete="off">
+            <button id="send-btn">➤</button>
+        </div>
+    </div>
+
+    <!-- Bot Avatar initially visible at the bottom-right -->
+    <img src="logo.jpeg" alt="Bot Avatar" id="bot-avatar" class="bot-avatar" style="display: block; position: fixed; bottom: 20px; right: 20px; cursor: pointer;">
+
+    <button id="bot">chatbot</button>
+    <script>
+        
+    </script>
+    
+    <script src="ch2.js"></script>
+</body>
+</html>
+
+

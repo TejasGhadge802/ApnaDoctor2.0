@@ -1,0 +1,384 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #info {
+        width: 100%; 
+        flex-direction: column;
+        align-items: stretch; /* Ensures full width */
+        text-align: left; /* Adjust text alignment if needed */
+    }
+
+    #details, #mission {
+        width: 100%; /* Uses full width */
+        font-size: 1em; /* Keeps text readable */
+        max-width: none; /* Removes width restrictions */
+        padding: 15px; /* Adds some spacing */
+    }
+    
+    #abilitys {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .abi {
+        text-align: center;
+    }
+
+    /* Adjust chatbot for smaller screens */
+    #chatbotContainer {
+        width: 95%;
+        height: 75vh;
+    }
+}
+
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E0F2FF; /* Light Blue Background C6FFD4*/
+    color: #002B5B; /* Dark Blue Text */
+}
+
+/* Header Styles */
+/* Logo container for alignment */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo Styles */
+#logo {
+    height: 10vw; /* Adjust size as needed */
+    width: auto;
+    margin-right: 10vw;
+    /* mix-blend-mode: color-burn; */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #004085; /* Deep Blue */
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header h1{
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 50px 0px 50px;
+    background: #55A7FF; /* Bright Blue  */
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Content & Contact Section */
+.content, .contact-info {
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+    color: #007BFF; /* Medical Blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #39DD5E; /* Healing Green */
+}
+
+/* Footer */
+footer {
+    background: #004085; /* Deep Blue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#links{
+    /* margin-top: 10px 20px; */
+    text-align: center;
+    font-size: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+#git{
+    color: black;
+}
+#youtube{
+    color: #BF2121;
+}
+#insta{
+    color: #CC82FF;
+}
+
+
+
+
+/* Extra style for Home page */
+#info {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    gap: 20px;
+    padding: 20px 10px;
+    margin: auto;
+    align-items: stretch; /* Ensure both divs are of equal height */
+}
+
+#details, #mission {
+    margin: 5px 10px;
+    padding: 10px; 
+    flex: 1;
+    width: 90%;
+    min-height: auto;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+/* Updated chatbot styles */
+.chat-container {
+    width: 350px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+  }
+
+  .chat-header {
+    background: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+  }
+
+  .bot-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .close-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .chat-box {
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+  }
+
+  .chat-message {
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    max-width: 80%;
+    font-size: 14px;
+  }
+
+  .bot {
+    background: #e0e0e0;
+    align-self: flex-start;
+  }
+
+  .user {
+    background: #0078FF;
+    color: white;
+    align-self: flex-end;
+  }
+
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background: white;
+    align-items: center;
+  }
+
+  #user-input2 {
+    flex: 1;
+    width: 10%;
+  }
+
+  #user-input {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .chat-input button {
+    background: #0078FF;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+
+  #bot-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+
+/* Chatbot Header */
+.chat-header {
+    background: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+/* Chatbox and input area */
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-top: 1px solid #ddd;
+    background: white;
+    align-items: center;
+}
+
+#user-input {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+#user-input2 {
+    flex: 1;
+    width: 8vw;
+}
+
+.chat-input button {
+    background: #0078FF;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+/* icons */
+
+.abi i {
+    font-size: 3.5em;
+    display: block;
+    text-align: center;
+} 
+
+#abilityContainer {
+    margin: 5px;
+    padding: 10px 10px;
+    font-size: .9rem;
+}
+
+#abilitys {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.abi {
+    border: 2px solid;
+    padding: 10px;
+}
+
+.abi h2:first-child {
+    text-align: center;
+}
+
+.abi p {
+    line-height: 25px;
+}
+
+#mission i {
+    font-size: 6em;
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+
